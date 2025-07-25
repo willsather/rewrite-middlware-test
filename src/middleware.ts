@@ -7,6 +7,6 @@ export const config = {
 
 export function middleware(request: NextRequest) {
   console.log(
-    `Middleware Invoked: URL: ${request.url}. Next URL: ${request.nextUrl}`,
+    `Middleware Invoked: URL: ${request.url}. Next URL: ${request.nextUrl.pathname}`,
   );
 }
